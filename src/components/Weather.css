@@ -628,9 +628,10 @@
 
 @media (max-width: 768px) {
     .weather {
-        max-width: calc(100% - 2rem);
+        max-width: 85%;
         padding: 28px 22px;
         border-radius: 25px;
+        margin: 1.5rem auto;
     }
 
     .weather:hover {
@@ -651,7 +652,7 @@
     }
 
     .weather-data {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
         margin-top: 18px;
     }
@@ -683,9 +684,10 @@
 
 @media (max-width: 640px) {
     .weather {
-        max-width: calc(100% - 1.5rem);
+        max-width: 80%;
         padding: 24px 18px;
         border-radius: 22px;
+        margin: 1.5rem auto;
     }
 
     .search-bar {
@@ -722,6 +724,7 @@
     .weather-data {
         margin-top: 16px;
         gap: 8px;
+        flex-direction: row;
     }
 
     .weather-data .col {
@@ -780,9 +783,10 @@
 
 @media (max-width: 480px) {
     .weather {
-        max-width: calc(100% - 1rem);
+        max-width: 85%;
         padding: 20px 16px;
         border-radius: 20px;
+        margin: 2rem auto;
     }
 
     .search-bar input {
@@ -812,10 +816,18 @@
 
     .weather-data {
         margin-top: 14px;
+        flex-direction: row;
+        gap: 8px;
     }
 
     .weather-data .col {
         padding: 10px 12px;
+        flex-direction: column;
+    }
+
+    .weather-data .col div {
+        align-items: center;
+        text-align: center;
     }
 
     .weather-data .col p {
@@ -843,8 +855,9 @@
 
 @media (max-width: 375px) {
     .weather {
-        max-width: calc(100% - 0.75rem);
+        max-width: 85%;
         padding: 18px 14px;
+        margin: 2rem auto;
     }
 
     .search-bar input {
@@ -871,8 +884,18 @@
         font-size: 20px;
     }
 
+    .weather-data {
+        flex-direction: row;
+    }
+
     .weather-data .col {
         padding: 9px 10px;
+        flex-direction: column;
+    }
+
+    .weather-data .col div {
+        align-items: center;
+        text-align: center;
     }
 
     .weather-data .col p {
@@ -891,8 +914,9 @@
 
 @media (max-width: 320px) {
     .weather {
-        max-width: calc(100% - 0.5rem);
+        max-width: 85%;
         padding: 16px 12px;
+        margin: 1.5rem auto;
     }
 
     .search-bar input {
@@ -919,8 +943,18 @@
         font-size: 18px;
     }
 
+    .weather-data {
+        flex-direction: row;
+    }
+
     .weather-data .col {
         padding: 8px 10px;
+        flex-direction: column;
+    }
+
+    .weather-data .col div {
+        align-items: center;
+        text-align: center;
     }
 
     .weather-data .col p {
