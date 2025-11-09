@@ -24,6 +24,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
+  width: 100%;
 }
 
 /* Smooth scrolling */
@@ -34,12 +35,18 @@ html {
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .main-content {
-    padding: 1.5rem 0.5rem;
+    padding: 1rem 0.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .main-content {
-    padding: 1rem 0.5rem;
+    padding: 0.75rem 0.25rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-content {
+    padding: 0.5rem 0.25rem;
   }
 }
