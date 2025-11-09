@@ -14,7 +14,7 @@
     align-items: center;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-    overflow: visible;
+    overflow: hidden;
     margin: 0 auto;
 }
 
@@ -629,8 +629,8 @@
 
 @media (max-width: 768px) {
     .weather {
-        max-width: 85%;
-        padding: 28px 22px;
+        max-width: 88%;
+        padding: 28px 24px;
         border-radius: 25px;
         margin: 1.5rem auto;
     }
@@ -685,8 +685,8 @@
 
 @media (max-width: 640px) {
     .weather {
-        max-width: 80%;
-        padding: 24px 18px;
+        max-width: 88%;
+        padding: 24px 20px;
         border-radius: 22px;
         margin: 1.5rem auto;
     }
@@ -784,11 +784,10 @@
 
 @media (max-width: 480px) {
     .weather {
-        max-width: 85%;
-        padding: 20px 16px;
+        max-width: 90%;
+        padding: 20px 18px;
         border-radius: 20px;
         margin: 2rem auto;
-        overflow: visible;
     }
 
     .search-bar {
@@ -799,6 +798,8 @@
         height: 44px;
         font-size: 13px;
         padding: 0 14px;
+        flex: 1;
+        min-width: 0;
     }
 
     .search-bar img {
@@ -862,20 +863,21 @@
 
 @media (max-width: 375px) {
     .weather {
-        max-width: 85%;
-        padding: 18px 14px;
+        max-width: 90%;
+        padding: 18px 16px;
         margin: 2rem auto;
-        overflow: visible;
     }
 
     .search-bar {
-        gap: 6px;
+        gap: 8px;
     }
 
     .search-bar input {
         height: 42px;
         font-size: 12px;
         padding: 0 12px;
+        flex: 1;
+        min-width: 0;
     }
 
     .search-bar img {
@@ -927,20 +929,21 @@
 
 @media (max-width: 320px) {
     .weather {
-        max-width: 85%;
-        padding: 16px 12px;
+        max-width: 90%;
+        padding: 16px 14px;
         margin: 1.5rem auto;
-        overflow: visible;
     }
 
     .search-bar {
-        gap: 6px;
+        gap: 8px;
     }
 
     .search-bar input {
         height: 40px;
         font-size: 12px;
         padding: 0 10px;
+        flex: 1;
+        min-width: 0;
     }
 
     .search-bar img {
